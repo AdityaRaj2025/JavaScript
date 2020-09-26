@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // Passing Anonymous Function as Argument
+            function disp(myfun){
+               return myfun();
+            }
+            document.write(disp(function(){
+                return "Passing Anonymous Function as Argument";
+            }));
+        </script>
+    </body>
+</html>

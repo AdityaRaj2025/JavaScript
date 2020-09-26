@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    </head>
+    <body>
+        <script>
+            var i="I' m global variable";
+           function show(){
+               var j="I m local variable";
+                document.write(j+"<br>");
+
+                function subShow(){
+                    var k="I 'm local variable under function";
+                    document.write(k+"<br>");
+                    document.write(j+"<br>");
+                }
+                subShow();
+           }
+           show();
+           document.write(i+"<br>");
+        </script>
+    </body>
+</html>
